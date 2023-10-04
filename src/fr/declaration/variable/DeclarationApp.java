@@ -14,8 +14,10 @@ public class DeclarationApp {
 		char nbChar = '1';
 		boolean booBoolean = true;
 		String nbString = "666";  
+		int a = 053;				// notation octale : déclaration en base 8 et non 10
 		
 		System.out.println(nbInt);
+		System.out.println(a);
 		
 	}
 
