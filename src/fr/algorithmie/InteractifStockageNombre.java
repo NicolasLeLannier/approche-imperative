@@ -11,7 +11,7 @@ public class InteractifStockageNombre {
 		Scanner scanner = new Scanner(System.in);
 		int nb1 = 0;
 		int nb2 = 0;
-		int[] array = {};
+		int[] array = new int[0];
 
 		// Tant que le nombre n'est pas entre 1 et 10 on repose la question
 		do {
@@ -26,6 +26,7 @@ public class InteractifStockageNombre {
 				System.out.print("\nEntrez un nombre à ajouter : ");
 				nb2 = scanner.nextInt();
 
+				// Copie le tableau pour le recréer avec une taille en plus
 				array = Arrays.copyOf(array, array.length + 1);
 				array[array.length - 1] = nb2;
 
@@ -37,6 +38,7 @@ public class InteractifStockageNombre {
 					System.out.println(
 							"Vous n'avez pas encore de données dans votre tableau. Vous pouvez en ajouter en appuyant sur 1.");
 				} else {
+					// Affiche un tableau avec une bonne présentation visuelle
 					System.out.println("\n----------- Voici votre tableau -------------");
 					for (int affichage : array) {
 						System.out.print(affichage + " ");
