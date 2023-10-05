@@ -12,6 +12,7 @@ public class SommeDeTableauxDiff {
 		int[] array3 = new int[array1.length + array2.length];
 		int longueur = array1.length + array2.length;
 
+		// Ajout d'abord du tableau 1 puis celui du 2
 		for (int i = 0; i < longueur; i++) {
 			if (i >= array1.length) {
 				array3[i] = array2[i - array1.length];
@@ -20,6 +21,7 @@ public class SommeDeTableauxDiff {
 			}
 		}
 
+		// Affichage de la somme des tableaux
 		for (int affichage : array3)
 			System.out.print(affichage + " ");
 	}

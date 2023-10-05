@@ -10,10 +10,13 @@ public class CalculMoyenne {
 		int somme = 0;
 		int moyenne = 0;
 		
+		// Somme des nombres du tableau
 		for (int i = 0; i < array.length; i++) {
 			somme += array[i];
 		}
 		moyenne = somme / array.length;
+		
+		
 		System.out.println("Moyenne : " + moyenne);
 
 	}

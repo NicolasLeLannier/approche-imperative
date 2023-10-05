@@ -11,7 +11,7 @@ public class ComparaisonTableau {
 		
 		int nombreElementCommun = 0;
 		
-		// Double boucle for 
+		// Double boucle for pour comparer les 2 tableaux
 		for (int i = 0; i < array1.length; i++) {
 			for (int f = 0; f < array2.length; f++) {
 				if(array1[i] == array2[f]) {
