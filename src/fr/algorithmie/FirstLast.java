@@ -10,6 +10,7 @@ public class FirstLast {
 		
 		boolean controleTableau = false;
 		
+		// Check des conditions (s'il n'est pas vide, ou si 1er et dernier sont égaux)
 		if(array.length > 0 && array[0] == array[array.length - 1]) {
 			controleTableau = true;
 		}
