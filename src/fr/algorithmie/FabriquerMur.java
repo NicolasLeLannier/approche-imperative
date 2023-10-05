@@ -30,6 +30,10 @@ public class FabriquerMur {
 			if(longueur <= nbSmall) {
 				resultat = true;
 			}
+		} else {
+			if(longueur <= nbSmall) {
+				resultat = true;
+			}
 		}
 //		System.out.println("Longueur : " + resultat);
 		return resultat;
